@@ -1,1 +1,19 @@
-body{background-color:blue;}
+body{
+    margin:0;
+    padding:0;
+    background-color:black;
+    color:white;
+}
+.presentacion{
+    display:flex;
+    height:400px;
+    justify-content: center;
+    background-image:url(../images/cabezera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.presentacion h2{
+    display:flex;
+    justify-content: ;
+}
