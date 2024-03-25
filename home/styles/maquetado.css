@@ -1,45 +1,72 @@
+.presentation div,
+.categorias .content,
+.resenias .father{
+    flex-direction:row;
+}
+main,
+.presentacion,
+.presentation div,
+.call-to-action,
+.call-to-action div,
+.categorias,
+.categorias .content,
+.categorias .article,
+.resenias,
+.resenias .father,
+footer{
+    display:flex;
+
+}
 div{
     display: inline-block;
 }
 main{
-    display:flex;
     flex-wrap: wrap;
     flex-direction:column;
     align-content:center;
 }
 .presentacion{
-    display: flex;
     align-items: center;
     justify-content:center;
     height:450px;
 }
 .presentation div{
-    display: flex;
-    flex-direction:row;
     justify-content: flex-end;
 }
 .call-to-action{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 35vh;
+    height: max-content;
 }
 .call-to-action div{
-    display: flex;
     flex-direction:column;
     align-items:center;
     width:50%;
 }
 .categorias{
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: stretch;
+}
+.categorias .content{
+    margin: 30px;
+    justify-content:space-around;
+
 }
 .categorias .article{
-    display:flex;
-    flex-direction:row;
+    width:40%;
+    flex-direction:column;
     flex-wrap:nowrap;
-    justify-content:space-between;
+    align-items: flex-start;
+    justify-content: center;
+}
+.resenias{
+    flex-direction:column;
+    justify-content:center;
+    align-items:stretch;
+}
+.resenias .father{
+    justify-content:space-evenly;
+    align-items:stretch;
 }
