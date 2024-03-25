@@ -1,0 +1,45 @@
+div{
+    display: inline-block;
+}
+main{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-content:center;
+}
+.presentacion{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height:450px;
+}
+.presentation div{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
+.call-to-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+.call-to-action div{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width:50%;
+}
+.categorias{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.categorias .article{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
