@@ -3,7 +3,7 @@
 .resenias .father{
     flex-direction:row;
 }
-main,
+header,main,
 .presentacion,
 .presentation div,
 .call-to-action,
@@ -17,8 +17,16 @@ footer{
     display:flex;
 
 }
-div{
-    display: inline-block;
+header{
+    width: 100%;
+    height: max-content;
+    flex-grow: 1;
+}
+header div{
+    display:flex;
+    justify-content: flex-end;
+    flex-grow: 4;
+    align-self: center;
 }
 main{
     flex-wrap: wrap;
@@ -70,3 +78,26 @@ main{
     justify-content:space-evenly;
     align-items:stretch;
 }
+footer{
+    flex-shrink: 1;
+    height: 35vh;
+    flex-direction:row;
+}
+footer h2{
+    align-self: flex-start;
+}
+footer .contact{
+    justify-content: flex-start;
+    align-self: flex-end;
+}
+
+
+
+/*flex: flex-grow flex-shrink flex basis
+
+flex grow: permite que los elementos hijo utilicen el espacio sobrante del contenedor padre
+
+flex shrink: permite que los elementos hijo se reduzcan cuando el contenedor padre no cuente con espacio suficiente
+
+flex basis: permite que los elementos hijo crezca o se redezca en direccion a el eje principal de alineacion (cross axis, main axis)
+*/
