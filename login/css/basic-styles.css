@@ -1,5 +1,58 @@
 body{
-    background-image: url(../images/arcades.jpg);
+    margin: 0;
+    padding: 0;
+}
+main{
+    position: fixed;
+    width:100%;
+    min-height: 100vh;
+    background-image: url(../images/pexels-soumil-kumar-735911.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+}
+section{
+    min-width: 49%;
+    max-width:50%;
+    flex: 0 0 25vh;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.flex{
+    display: flex;
+    flex-flow: column wrap;
+}
+.content{
+    max-width: 200px;
+    align-self: center;
+    opacity: 100%;
+}
+section img{
+    padding:40px 10px;
+    max-width: 30px;
+}
+.estilo{
+    background-color: #000123;
+    border-radius: 20px;
+    opacity: 60%;
+    backdrop-filter: blur(100px);
+}
+input{
+    margin: 5px;
+}
+.vista{
+    width: 100%;
+}
+.boton{
+    cursor: pointer;
+    background-color: #FF0F7B;
+    color:white;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
 }
