@@ -1,0 +1,48 @@
+/* agregando estilos al header */
+
+header{
+    background-color:#000123;
+}
+header h1{
+    font-size: 40px;
+    margin: 10px 20px;
+    color:white;
+}
+header a{
+    text-decoration: none;
+    padding: 10px;
+    background-color:#000123;
+    color:white;
+    border-radius: 20px;
+    border: 1px solid #000123;
+    margin: 0 3px;
+    transition:all ease .5s;
+}
+header a:hover{
+    border: 1px solid #FF0F7B;
+    color:#FF0F7B;
+}
+
+/* agregando estylos al main */
+.categorias div{
+    min-width: 95px;
+    min-height: 100px;
+    margin: 5px;
+    text-align: center;
+    cursor:pointer;
+    border-radius:7px ;
+    transition:all ease-in .19s;
+}
+.categorias img{
+    height: 60px;
+    width:60px;
+    border-radius: 50px;
+}
+.categorias{
+    background-color: #000123;
+}
+.categorias p{
+    font-size: 15px;
+    color:#FF0F7B;
+}
+/* agregando estilos al footer */

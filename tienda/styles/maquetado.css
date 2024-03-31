@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding:0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex: 1 0 100%;
+}
+.categorias{
+    max-width: 80%;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+}
+.categorias div img{
+    max-width: 60px;
+}
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    height: 15vh;
+}
+footer h2{
+    align-self: flex-start;
+}
+footer .contact{
+    align-self: flex-end;
+    text-align: end;
+}
