@@ -24,6 +24,9 @@ header a:hover{
 }
 
 /* agregando estylos al main */
+main{
+    background-color:#000123
+}
 .categorias div{
     min-width: 95px;
     min-height: 100px;
@@ -45,4 +48,32 @@ header a:hover{
     font-size: 15px;
     color:#FF0F7B;
 }
+.te-interese{
+    background-color:#000123;
+}
+.style-product1{
+    margin:10px 0;
+}
+
+.style-product1 img{
+    width:10rem;
+    height: 10rem;
+    border-radius:50px 0px 0px 50px;
+
+}
+.style-product1 div{
+    background-color:white;
+    color:#000123;
+    border-radius:0px 50px 50px 0px;
+    text-transform: center;
+    transition: all ease 0.3s;
+}
+.style-product1 p{
+    margin:10px auto;
+}
+.style-product1 div:hover{
+    background-color: #121560;
+    color: white;
+}
+
 /* agregando estilos al footer */

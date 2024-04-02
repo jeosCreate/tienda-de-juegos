@@ -31,6 +31,23 @@ main{
 .categorias div img{
     max-width: 60px;
 }
+
+.te-interese{
+    min-width: 80%;
+    max-height: max-content;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.style-product1{
+    display: flex;
+    flex-flow: row wrap;
+}
+.style-product1 div{
+    flex:1 0 auto;
+    align-self: stretch;
+    padding-left: 20px;
+}
+
 footer{
     display: flex;
     flex-flow: row wrap;
