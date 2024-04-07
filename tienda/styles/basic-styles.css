@@ -22,7 +22,26 @@ header a:hover{
     border: 1px solid #FF0F7B;
     color:#FF0F7B;
 }
+header .boton{
+    width:max-content;
+    height:auto;
+    font-size: 30px;
+    padding: 5px 15px;
+    margin: 0 10px;
+    background-color: #000123;
+    border-radius: 50px;
+    color:white;
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+    transition: all ease .3s;
+}
+header .boton:hover{
+    background-color:#FF0F7B;
+    color:#000123;
+    cursor:pointer;
 
+}
 /* agregando estylos al main */
 main{
     background-color:#000123
@@ -56,8 +75,8 @@ main{
 }
 
 .style-product1 img{
-    width:10rem;
-    height: 10rem;
+    width:5rem;
+    height: 5rem;
     border-radius:50px 0px 0px 50px;
 
 }
@@ -72,8 +91,39 @@ main{
     margin:10px auto;
 }
 .style-product1 div:hover{
-    background-color: #121560;
+    background-color: #000123;
     color: white;
+    border:thin solid #FF0F7B;
+    cursor:pointer;
 }
-
+.destacados img{
+    width: 100%;
+    height:10rem;
+    border-radius:15px 15px 0 0;
+}
+.destacados .content{
+    background-color: white;
+    border-radius:15px 15px 0 0;
+}
 /* agregando estilos al footer */
+footer{
+    background-image: url(../../home/images/persona-jugando-consola.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer h2{
+    margin: 20px;
+    color:white
+}
+footer .contact{
+    margin: 20px;
+    color:white;
+}
+footer .sombra{
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    opacity: 35%;
+    background-color: #000123;
+}

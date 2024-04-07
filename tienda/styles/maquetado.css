@@ -22,8 +22,12 @@ main{
     align-items: center;
     flex: 1 0 100%;
 }
+section{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
 .categorias{
-    max-width: 80%;
+    width: 80%;
     display: flex;
     flex-flow:row wrap;
     justify-content: center;
@@ -36,9 +40,11 @@ main{
     min-width: 80%;
     max-height: max-content;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 .style-product1{
+    width: 80%;
     display: flex;
     flex-flow: row wrap;
 }
@@ -47,12 +53,30 @@ main{
     align-self: stretch;
     padding-left: 20px;
 }
+.destacados{
+    width: 80%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.destacados .content{
+    flex:0 0 max-content;
+    margin:20px
+}
+.destacados .content:hover{
+    cursor: pointer;
+
+}
+.destacados p{
+    margin:10px
+}
 
 footer{
     display: flex;
     flex-flow: row wrap;
     justify-content:space-between;
-    height: 15vh;
+    height: 25vh;
 }
 footer h2{
     align-self: flex-start;
@@ -60,4 +84,37 @@ footer h2{
 footer .contact{
     align-self: flex-end;
     text-align: end;
+}
+ /* agregando responsive a algunas partes de la pagina */
+@media (min-width:580px){
+    .te-interese .style-product1{
+        flex:0 0 50%;
+    }
+    .te-interese img{
+        margin-left: 10px;
+    }
+    .te-interese .style-product1 div{
+        margin-right: 10px;
+
+    }
+
+}
+@media (min-width:200px){
+    
+    header .navbar{
+        display: none;
+    }
+    header .boton{
+        opacity:100%;
+        overflow: visible;
+    }
+}
+@media (min-width:880px){
+    header .navbar{
+        display: flex;
+    }
+    header .boton{
+        opacity:0;
+        overflow: hidden;
+    }
 }
